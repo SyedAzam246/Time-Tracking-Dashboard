@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -12,11 +12,87 @@
 </head>
 <body>
 
+  <!--Main Card-->
+  <main class="container">
+    <section class="person">
+      <div class="main-card">
+        <img src="images/image-jeremy.png" class="person-img" alt="Person Image">
+        <div class="person-report">Report for</div>
+        <div class="person-name">Jeremy Robson</div>
+      </div>
+     
+      <!--Sub Card-->
+      <div class="person-subcard">
+          <div class="person-subcard-daily"><a href="# " class="text-link">Daily</a></div>
+          <div class="person-subcard-weekly"><a href="#" class="text-link">Weekly</a> </div>
+          <div class="person-subcard-monthly"><a href="#" class="text-link">Monthly</a> </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="work-background small-card-back">
+      </div>
+      <div class="work-main card">
+        <div class="work-main-title card-title">Work <a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="work-main-time card-time">32hrs</div>
+        <div class="work-main-last-status card-status">Last Week - 36hrs</div>
+      </div>
+    </section>
+
+    <section class="play">
+      <div class="play-background small-card-back">
+      </div>
+      <div class="play-main card">
+        <div class="play-main-title  card-title">Play<a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="play-main-time card-time">10hrs</div>
+        <div class="play-main-last-status  card-status">Last Week - 8hrs</div>
+      </div>
+    </section>
+
+    <section class="study">
+      <div class="study-background small-card-back">
+      </div>
+      <div class="study-main card">
+        <div class="study-main-title card-title">Study <a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="study-main-time card-time">4hrs</div>
+        <div class="study-main-last-status card-status">Last Week - 7hrs</div>
+      </div>
+    </section>
+    
+    <section class="exercise">
+      <div class="exercise-background small-card-back">
+      </div>
+      <div class="exercise-main card">
+        <div class="exercise-main-title card-title">Exercise <a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="exercise-main-time card-time">4hrs</div>
+        <div class="exercise-main-last-status card-status">Last Week - 5hrs</div>
+      </div>
+    </section>
+ 
+    <section class="social">
+      <div class="social-background small-card-back">
+      </div>
+      <div class="social-main card">
+        <div class="social-main-title card-title">Social <a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="social-main-time card-time">5hrs</div>
+        <div class="social-main-last-status card-status">Last Week - 10hrs</div>
+      </div>
+    </section>
+   
+    <section class="self-care">
+      <div class="self-care-background small-card-back">
+      </div>
+      <div class="self-care-main card">
+        <div class="self-care-main-title card-title">Self Care <a href="#" class="nav-link"><span class="card-nav-dot"></span></a> </div>
+        <div class="self-care-main-time card-time">2hrs</div>
+        <div class="self-care-main-last-status card-status">Last Week - 2hrs</div>
+      </div>
+    </section>
+
+  </main>
   
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <div> by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  <span>Coded by <a href="#">Syed Azam</a>.</span> </div>
+   
+  </footer>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.container {
+  width: 70%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 15% 10%;
+}
+
+.person {
+  display: grid;
+  grid-row: 1 / span 2;
+  height: 18rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}

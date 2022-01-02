@@ -1,1 +1,6 @@
-@import "base/_reset";
+@import "abstracts/varaibles";
+@import "base/reset";
+@import "base/typography";
+@import "component/buttons";
+@import "component/cards";
+@import "layout/grids";

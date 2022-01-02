@@ -1,0 +1,143 @@
+/******************/
+/****Main Card****/
+/****************/
+
+.main-card {
+  background-color: $Blue;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.person {
+  width: 170px;
+
+  &-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 3px #fff;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  &-report,
+  &-name {
+    margin-left: 20px;
+    color: $Pale-Blue;
+  }
+  &-report {
+    font-size: 9px;
+    margin-top: 25px;
+  }
+  &-name {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  /******************/
+  /****Sub Card****/
+  /****************/
+
+  &-subcard {
+    background-color: $Dark-blue;
+    //align-items: flex-end;
+    padding: 40px 0 6px 0;
+    border-radius: 10px;
+    margin-top: -33px;
+    &-daily,
+    &-weekly,
+    &-monthly {
+      color: $Pale-Blue;
+      font-size: 11px;
+      margin: 10px 0px 14px 20px;
+      z-index: -1;
+    }
+  }
+}
+
+/******************/
+/****Card****/
+/****************/
+
+.card {
+  color: $white;
+  width: 165px;
+  padding: 15px 0;
+  background-color: $Dark-blue;
+  border-radius: 10px;
+  &-title,
+  &-time,
+  &-status {
+    margin: 8px 0 6px 20px;
+  }
+
+  &-title {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  &-time {
+    font-size: 38px;
+    font-weight: $font-weight-1;
+  }
+  &-status {
+    font-size: 9px;
+    font-weight: $font-weight-1;
+  }
+}
+
+/******************/
+/****Card Background****/
+/****************/
+.small-card-back {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.card-nav-dot {
+  background-image: url("../../images/icon-ellipsis.svg");
+  width: 21px;
+  height: 8px;
+  color: #fff;
+  display: inline-block;
+  background-repeat: repeat-x;
+  margin-left: 66px;
+}
+.work {
+  &-background {
+    background-image: url("../../images/icon-work.svg");
+    background-color: $Light-red-work;
+  }
+}
+.play {
+  &-background {
+    background-image: url("../../images/icon-play.svg");
+    background-color: $Soft-blue-play;
+  }
+}
+.study {
+  &-background {
+    background-image: url("../../images/icon-study.svg");
+    background-color: $Light-red-study;
+  }
+}
+.exercise {
+  &-background {
+    background-image: url("../../images/icon-exercise.svg");
+    background-color: $Lime-green-exercise;
+  }
+}
+.social {
+  &-background {
+    background-image: url("../../images/icon-social.svg");
+    background-color: $Violet-social;
+  }
+}
+.self-care {
+  &-background {
+    background-image: url("../../images/icon-self-care.svg");
+    background-color: $Soft-orange-self-care;
+  }
+}
