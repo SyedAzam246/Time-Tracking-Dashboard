@@ -7,7 +7,10 @@
   border-radius: 10px;
   z-index: 2;
 }
-
+.text-link {
+  text-decoration: none;
+  color: $Pale-Blue;
+}
 .person {
   width: 170px;
 
@@ -22,15 +25,16 @@
   &-report,
   &-name {
     margin-left: 20px;
-    color: $Pale-Blue;
   }
   &-report {
     font-size: 9px;
     margin-top: 25px;
+    color: $Pale-Blue;
   }
   &-name {
     font-size: 24px;
     margin-bottom: 30px;
+    color: $white;
   }
   /******************/
   /****Sub Card****/
@@ -70,7 +74,7 @@
   }
 
   &-title {
-    font-size: 13px;
+    font-size: $title-font;
     margin-bottom: 16px;
   }
   &-time {
@@ -103,7 +107,9 @@
   color: #fff;
   display: inline-block;
   background-repeat: repeat-x;
-  margin-left: 66px;
+  
+  margin-left: 35%;
+  //margin-right: 2px;
 }
 .work {
   &-background {

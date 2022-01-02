@@ -6,7 +6,8 @@
   box-sizing: border-box; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  background-color: #0f1424; }
 
 body {
   font-family: "Rubik", sans-serif; }
@@ -23,6 +24,10 @@ body {
   border-radius: 10px;
   z-index: 2; }
 
+.text-link {
+  text-decoration: none;
+  color: #bdc1ff; }
+
 .person {
   width: 170px;
   /******************/
@@ -36,14 +41,15 @@ body {
     margin-top: 30px;
     margin-left: 20px; }
   .person-report, .person-name {
-    margin-left: 20px;
-    color: #bdc1ff; }
+    margin-left: 20px; }
   .person-report {
     font-size: 9px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    color: #bdc1ff; }
   .person-name {
     font-size: 24px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #fff; }
   .person-subcard {
     background-color: #1c1f4a;
     padding: 40px 0 6px 0;
@@ -67,7 +73,7 @@ body {
   .card-title, .card-time, .card-status {
     margin: 8px 0 6px 20px; }
   .card-title {
-    font-size: 13px;
+    font-size: 18px;
     margin-bottom: 16px; }
   .card-time {
     font-size: 38px;
@@ -95,7 +101,7 @@ body {
   color: #fff;
   display: inline-block;
   background-repeat: repeat-x;
-  margin-left: 66px; }
+  margin-left: 35%; }
 
 .work-background {
   background-image: url("../../images/icon-work.svg");
