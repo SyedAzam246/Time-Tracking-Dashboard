@@ -88,12 +88,14 @@
     font-size: 38px;
     font-weight: $font-weight-1;
     grid-area: time;
+    transition: all 0.3s ease-in-out;
   }
   &-status {
     font-size: 9px;
     font-weight: $font-weight-1;
     grid-area: status;
     color: $Pale-Blue;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -167,5 +169,106 @@
 }
 
 .active {
-  background-color: $Desaturated-blue;
+  background-color: $hover-color;
+}
+
+/******************/
+/****Media Query*******/
+/******************/
+
+@media only screen and (max-width: 850px) {
+  .main-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 1fr;
+    height: 100px;
+  }
+  .text-link {
+  }
+  .person {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+
+    &-img {
+      grid-row: span 2;
+    }
+    &-report,
+    &-name {
+      margin-left: 0px;
+    }
+    &-report {
+      margin-top: 35px;
+    }
+    &-name {
+      font-size: 18px;
+      grid-area: 2 / 2 / 3 / 4;
+      margin-top: 10px;
+    }
+    /******************/
+    /****Sub Card****/
+    /****************/
+
+    &-subcard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+
+      &-daily,
+      &-weekly,
+      &-monthly {
+        color: $Pale-Blue;
+
+        z-index: 4;
+      }
+    }
+  }
+  ///
+  .card {
+    width: 100%;
+
+    grid-template-columns: 100px 1fr 35px;
+    grid-template-rows: 39px 50px;
+
+    &-title {
+      margin-bottom: -10px;
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    &-time {
+      font-size: 25px;
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    &-status {
+      font-size: 14px;
+      grid-area: 2 / 2 / 2 / 4;
+      margin-left: 53px;
+    }
+  }
+
+  .card-nav-dot {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-bottom: -8px;
+  }
+  .small-card-back {
+    background-size: contain;
+    background-position-x: 220px;
+  }
+
+  .work {
+    @include card-mob-layout;
+  }
+  .play {
+    @include card-mob-layout;
+  }
+  .study {
+    @include card-mob-layout;
+  }
+  .exercise {
+    @include card-mob-layout;
+  }
+  .social {
+    @include card-mob-layout;
+  }
+  .self-care {
+    @include card-mob-layout;
+  }
 }

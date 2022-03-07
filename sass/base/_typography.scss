@@ -5,6 +5,18 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  color: $white;
+}
+.attribution div a {
+  text-decoration: none;
+  color: $Soft-orange-self-care;
+  font-size: 12px;
+  transition: all .2s ease-in;
+}
+.attribution div a:hover {
+  font-style: italic;
+  color: $Desaturated-blue;
+  font-size: 14px;
 }
